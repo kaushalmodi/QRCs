@@ -1,78 +1,78 @@
 loop:
 	pdftex qrcMatlab.tex
-	xdg-open qrcMatlab.pdf &
+	acroread qrcMatlab.pdf &
 
 all:
 	pdftex qrcMatlab.tex
-	xdg-open qrcMatlab.pdf &
+	acroread qrcMatlab.pdf &
 
 mm:
 	pdftex qrcMatlab.tex
-	xdg-open qrcMatlab.pdf &
+	acroread qrcMatlab.pdf &
 
 matlab:
 	pdftex qrcMatlab.tex
-	xdg-open qrcMatlab.pdf &
+	acroread qrcMatlab.pdf &
 
 mc:
 	pdftex qrcMidnComm.tex
-	xdg-open qrcMidnComm.pdf &
+	acroread qrcMidnComm.pdf &
 
 tex:
 	pdftex qrcTeX.tex
-	xdg-open qrcTeX.pdf &
+	acroread qrcTeX.pdf &
 
 shell:
 	pdftex qrcShell.tex
-	xdg-open qrcShell.pdf &
+	acroread qrcShell.pdf &
 
 cli:
 	pdftex qrcShell.tex
-	xdg-open qrcShell.pdf &
+	acroread qrcShell.pdf &
 
 bash:
 	pdftex qrcShell.tex
-	xdg-open qrcShell.pdf &
+	acroread qrcShell.pdf &
 
 tmux:
 	pdftex qrcTmux.tex
-	xdg-open qrcTmux.pdf &
+	acroread qrcTmux.pdf &
 
 latex:
 	pdftex qrcLaTeX.tex
-	xdg-open qrcLaTeX.pdf &
+	acroread qrcLaTeX.pdf &
 
 R:
 	pdftex qrcR.tex
-	xdg-open qrcR.pdf &
+	acroread qrcR.pdf &
 
 r:
 	pdftex qrcR.tex
-	xdg-open qrcR.pdf &
+	acroread qrcR.pdf &
 
 git:
 	pdftex qrcGit.tex
-	xdg-open qrcGit.pdf &
+	acroread qrcGit.pdf &
 
 tig:
 	pdftex qrcTig.tex
-	xdg-open qrcTig.pdf &
+	acroread qrcTig.pdf &
 
 vim:
 	pdftex qrcVim.tex
-	xdg-open qrcVim.pdf &
+	acroread qrcVim.pdf &
 
 vimperator:
 	pdftex qrcVimpr.tex
-	xdg-open qrcVimpr.pdf &
+	acroread qrcVimpr.pdf &
 
 vimpr:
 	pdftex qrcVimpr.tex
-	xdg-open qrcVimpr.pdf &
+	acroread qrcVimpr.pdf &
 
 # viml:
 # 	pdftex qrcVimLatex.tex
-# 	xdg-open qrcVimLatex.pdf &
+# 	acroread qrcVimLatex.pdf &
 
 images:
 	for datei in $$(ls *pnm | cut -d \. -f 1) ; do make $$datei.ps ; done
